@@ -10,7 +10,7 @@ CRM for a small cafe
 
 ## Prior to using this app the following steps should be taken
 * Make sure you have Node.js v.10.19.0 or later and NPM installed
-* You also must have a **MongoDB database** available
+* You also must have **MongoDB database** available
 * Run **npm install** to install dependencies for the server
 * Run **npm run client-install** to install dependencies for the client
 
