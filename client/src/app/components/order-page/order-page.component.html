@@ -1,0 +1,50 @@
+<div class="page-title">
+  <h4 *ngIf="isRoot">Order</h4>
+  <h4 *ngIf="!isRoot">
+    <a routerLink="/order">Order</a>
+    <i class="material-icons">keyboard_arrow_right</i>
+    Add items
+  </h4>
+  <button
+    [disabled]="!order.list.length"
+    (click)="openModal()"
+    class="waves-effect btn grey darken-1">
+    Complete
+  </button>
+</div>
+
+<router-outlet></router-outlet>
+<div #modal class="modal modal-fixed-footer">
+  <div class="modal-content">
+    <h4 class="mb1">Your order</h4>
+    <table class="highlight">
+      <thead>
+      <tr>
+        <th>Title</th>
+        <th>Amount</th>
+        <th>Price</th>
+        <th></th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr *ngFor="let item of order.list">
+        <td>{{item.name}}</td>
+        <td>{{item.quantity}}</td>
+        <td>{{item.cost}}</td>
+        <td><i class="material-icons pointer" (click)="removePosition(item)">delete</i></td>
+      </tr>
+      </tbody>
+    </table>
+    <div class="order-summary">
+      <p>Total cost <strong>{{order.price}}</strong></p>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button [disabled]="pending" (click)="cancel()" class="modal-action waves-effect waves-black btn-flat">Cancel</button>
+    <button
+      [disabled]="!order.list.length || pending"
+      (click)="submit()"
+      class="modal-action btn waves-effect">Confirm</button>
+  </div>
+</div>
