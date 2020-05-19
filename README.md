@@ -21,7 +21,7 @@ CRM for a small cafe
 
 ## For Production mode
 * Set environment variable NODE_ENV **export NODE_ENV=production** if needed
-* Set two variables **export MONGO_URI=<your link>** and **export JWT=<your token>** for MongoDB and jsonwebtoken
+* Set two variables **export MONGO_URI=*your link*** and **export JWT=*your token*** for MongoDB and jsonwebtoken
 * You might want to change default port(5000) **export PORT=<your port>**
 * Run **npm install** to install dependencies for the server
 * Run **npm run client-install** to install dependencies for the client
