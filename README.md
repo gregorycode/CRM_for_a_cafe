@@ -1,5 +1,5 @@
 # CRM for a small cafe
-This application provides all the necessary functionality for a small cafe. You can add categories and items, create orders, count your revenue, see orders history, etc. The "Overview page shows some statistics data". On the "Analytics" page there are two charts which show dynamics of orders and the revenue.
+This application provides all the necessary functionality for a small cafe. You can add categories and items, create orders, count your revenue, see orders history, etc. The "Overview" page shows some statistics data. There are two charts on the "Analytics" page which show dynamics of orders and the revenue.
 
 ## Frontend (Angular 9)
 * Materialize for styling
