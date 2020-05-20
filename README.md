@@ -23,8 +23,6 @@ This application provides all the necessary functionality for a small cafe. You 
 * Set environment variable NODE_ENV **export NODE_ENV=production** if needed
 * Set two variables **export MONGO_URI=*your link*** and **export JWT=*your token*** for MongoDB and jsonwebtoken
 * You might want to change default port(5000) **export PORT=*your port***
-* Run **npm install** to install dependencies for the server
-* Run **npm run client-install** to install dependencies for the client
 * Run **npm run build --prefix client** to build the project. The build artifacts will be stored in the **client/dist/client** directory
 * Run **npm install pm2 -g** to install a production process manager for Node.js applications
 * Run **pm2 start index.js** to start the app in production mode
